@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT111</title>
+	
+	<!-- Internal CSS styles -->
+    <style>
+		 /* Global styling */
+		* {
+			box-sizing: border-box;
+		}
+		/* Body styling */
+        body {
+            font-family: Arial, San serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+			min-width: 100%;
+			font-size: 5mm;
+        }
+			/* Header styling */
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+		/*Footer styling*/
+		footer {
+			background-color: #333;
+			padding: 2px;
+			text-align: center;
+			color: white;
+			position: absolute:
+			bottom: 0;
+			box-shadow: 0 0 5px;
+		}
+		/* Half-background section styling */
+        .half-background {
+            height: 100vh;
+            background: url('shesh.jpg') center/cover;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: right;
+			margin-bottom: 0;
+        }
+		 /* White background section styling */
+        .white-background {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+		/* Text inside half-background styling */
+		.text-inside {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 20px; /* Adjust padding as needed */
+            max-width: 40%; /* Adjust the width of the text container */
+            box-sizing: border-box;
+			font-size: 16px;
+        }
+	
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+		nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 5px 10px;
+            margin: 0 5px;
+			transition: background-color 0.3s ease;
+        }
+		nav a:hover {
+			background-color: rgba(255, 255, 255, 0.1); /* Change the color as needed */
+			color: #fff; /* Change the text color as needed */
+		}
+		/* Section styling */
+        section {
+            padding: 10px 20px 20px;			
+        }
+		
+        .user-profile {
+            display: flex;
+            align-items: center;
+        }
+		/*user profile image styling*/
+        .user-profile img {
+    		border-radius: 50%;
+    		margin-right: 10px;
+        }
+		/* Container2 styling */
+		.container2{
+			margin: 10px;
+			gap: 100;
+            padding: 10px; 
+			align-items: center;
+        }
+		/* Container3 styling */
+		.container3{
+            flex: 1 ;
+            margin: 10px;
+            padding: 10px; 
+            border: 1px solid black;
+			background-color: White;
+			width: 30%;
+			max-width: 100%;
+        }
+		/* Image container styling */
+		.image-container {
+            display: flex;
+            justify-content: space-around; /* Adjust as needed for spacing */
+            align-items: center;
+			max-height: 100%;
+			height: 90%;
+        }
+        .image-container img {
+            max-width: 30%; /* Ensure images don't exceed container width */
+            height: auto; /* Maintain aspect ratio */
+        }
+		.body-image img {
+			max-width: 40%; /* Ensure the image doesn't exceed its container */
+			height: auto; /* Maintain the aspect ratio */
+			display: block; /* Remove any default inline spacing */
+			margin: 0 auto; /* Center the image horizontally */
+		}
+		/* Responsive styling for smaller screens */
+		@media (max-width: 768px) {
+            .adjustable-image {
+                width: 100px;
+                height: auto;
+            }
+
+            .left-container,
+            .right-container {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+	<body>
+
+
+			<div class="half-background">
+			<header>
+				<nav>
+					<div>
+						<a href="homepage.html">Homepage</a>
+						<a href="Blogenrty.html">IT111 Blog Entries</a>
+						<a href="flex.html">Flex Page</a>
+					</div>
+
+					<div class="user-profile">
+						<img src="kkkk.jpg" width="50">
+						<h4><a href="index.html" id="name" target="_blank">Kathryne Villaganas</a></h4>
+					</div>
+				</nav>
+			</header>
+			<div class="text-inside">
+				<h1>IT 111</h1>
+				<p>BLOG ENTRIES</p>
+			</div>
+			</div>
+
+			<div class="white-background"></div>
+			<hr>  
+		
+			<section id="blog">
+				<div style="text-align: center">
+					<h1>ITIII Blog Entries</h1> <hr>
+						<p> The Introduction to Computing and Basic Concepts of Computer Society class not only equipped
+							me with a solid understanding of computing fundamentals but also instilled a profound appreciation
+							for the symbiotic relationship between technology and society. Navigating through ethical quandaries,
+							societal challenges, and the evolving landscape of digital responsibility, this class left an indelible
+							mark on my perspective, empowering me to approach the digital frontier with a heightened sense of 
+							awareness and responsibility. 
+						</p>
+				</div>
+
+			
+				<div class="image-container">
+					<img src="itt.png" alt="Image 1">
+					<img src="yi.png" alt="Image 2">
+					<img src="css.png" alt="Image 3">
+				</div> 
+				<hr>
+				<div style="text-align: center">
+					<h1>LESSONS</h1>
+				</div>
+
+				<div class="container1" style="text-align: justify">
+					<h3> WHAT IS COMPUTING? </h3>
+						<p class="text-beside-image"> Most individuals use some form of computing every day. Either
+							swiping a debit card, sending an email, or using a cell phone can all
+							be considered forms of computing. I learn about the usage of computer and importance of computing as well as the Tech
+							Timeline Research in which I even memorized every era. Computing, in a broad sense, refers to the use of computers and 
+							computational techniques to process, manipulate, store, and communicate information. It encompasses a wide range of 
+							activities and applications that involve the use of electronic devices to perform various tasks. The statement you 
+							provided highlights the ubiquitous nature of computing in our daily lives and touches upon its diverse applications.
+						</p>
+					 
+				
+					<h3> PROFESSIONS AND CAREER IN COMPUTING</h3>
+						<p class="text-beside-image"> In the field of computing, professionals encounter diverse career paths,
+							spanning software development, data science, cybersecurity, artificial intelligence,
+							machine learning, web development, and network administration. Specializations can include
+							front-end or back-end development, database management, and system architecture, among others. In this module,
+							I was challenged in choosing the career path I want to focus on, although I am really not sure yet,
+							as long as I'll take the IT field then that would be enough for me.	The field of computing offers a vast array of 
+							professions and career paths, providing individuals with opportunities to specialize in various areas.
+							Here are some in demand list of IT career path:
+						</p>
+							<ul> 
+								<li> Software Developer </li>
+								<li>Front-End Developer </li>
+								<li>Back-End Developer </li>
+								<li>Data Analyst </li>
+								<li>Data Scientist </li>
+								<li>Cybersecurity Analyst </li>
+								<li>Ethical Hacker/Penetration Tester </li>
+								<li>Machine Learning Engineer </li>
+								<li>AI Research Scientist </li>
+								<li>Full-Stack Developer </li>
+								<li>Web Designer </li>
+								<li>Network Administrator </li>
+								<li>Network Engineer </li>
+								<li>Database Administrator </li>
+								<li>System Architect </li>
+							</ul>
+
+										 
+					<h3>INFORMATION PROCESSING CYCLE </h3>
+						<p class="text-beside-image">The Information Processing Cycle represents a sequential set of stages
+							that computers adhere to when processing data to generate meaningful information. These stages include
+							Input, Processing, Storage, Output, and Feedback. During the Input stage, raw data is entered into 
+							the system using devices like keyboards, mice, or scanners. In the Processing stage, the computer 
+							transforms the input data through arithmetic and logical operations performed by the Central Processing
+							Unit (CPU). The processed information is then stored in memory during the Storage stage, utilizing 
+							various storage devices such as RAM or hard drives. The Output stage involves presenting the processed
+							information to the user through devices like monitors or printers. Finally, in the Feedback stage, the
+							system uses the output to make improvements or adjustments, playing a crucial role in refining the 
+							performance of the information processing cycle. These fundamental concepts provide a basis for
+							understanding how computers and information systems function, with applications spanning computer 
+							science, data analysis, and system design. In fields like computer programming and information systems
+							management, this cycle serves as a foundational framework for optimizing data processing and system
+							performance, ensuring efficient and effective handling of information. 
+						</p> 
+				
+					<h3> CONCEPTS OF COMPUTER SECURITY </h3>
+						<p class="text-beside-image">
+							The Concepts of Computer Security lesson provides a comprehensive exploration of fundamental topics crucial 
+							for comprehending and implementing robust security measures. Commencing with an introductory overview, 
+							the lesson underscores the significance of safeguarding computer systems, networks, and data in the digital
+							landscape. It addresses the multifaceted nature of threats and vulnerabilities, delving into potential
+							risks such as malware and social engineering techniques that exploit human psychology. By examining these 
+							threats, the lesson equips learners with the knowledge needed to identify and counteract potential security breaches.
+							A key emphasis throughout the lesson is on the dynamic and evolving nature of computer security. This recognition
+							highlights the necessity for continuous awareness and adaptability to effectively respond to emerging threats 
+							and vulnerabilities. Given the rapid pace of technological advancements and the corresponding sophistication 
+							of cyber threats, the lesson underscores the importance of staying abreast of the latest security developments.
+							This proactive approach is essential in maintaining a secure computing environment that can withstand evolving challenges.
+							Moreover, the lesson likely delves into various security measures and practices, such as encryption, access controls,
+							and intrusion detection systems. These tools and techniques contribute to the establishment of a multi-layered defense
+							strategy, fortifying the resilience of computer systems against a wide array of potential security breaches.
+						</p> 
+
+					<h3> BASIC HTML and CSS </h3>
+						<p class="text-beside-image">Basic HTML and CSS serve as foundational technologies for web development, playing integral
+							roles in creating and styling web pages. HTML, or Hypertext Markup Language, serves as the backbone of the World Wide Web.
+							It is the standard markup language used to structure content on the internet. Through a system of tags and attributes, 
+							HTML allows web developers to define the various elements of a web page, encompassing text, images, links, forms, and more.
+							By employing these tags, developers can organize and arrange content in a way that browsers can interpret and display.
+							On the other hand, Cascading Style Sheets, or CSS, is a stylesheet language closely intertwined with HTML. While HTML dictates
+							the structure of web content, CSS is responsible for describing its presentation and styling. CSS provides a set of rules that
+							determine the layout, appearance, and formatting of HTML documents. The term "Cascading" in CSS refers to the hierarchy of 
+							styles, allowing developers to apply global styles while also providing the flexibility to override or modify styles for 
+							specific elements. This separation of structure (HTML) and presentation (CSS) enhances the maintainability and scalability 
+							of web development projects. In essence, HTML and CSS work in tandem to create visually appealing and well-structured web
+							pages. HTML establishes the basic building blocks and content structure, while CSS adds the aesthetic layer, ensuring a 
+							consistent and visually pleasing presentation across multiple pages. This separation of concerns simplifies the development
+							process, making it more efficient and facilitating updates and modifications to the appearance of a website without altering
+							its underlying structure. For anyone embarking on web development, a solid understanding of HTML and CSS is fundamental,
+							serving as the cornerstone for more advanced web technologies and frameworks.
+						</p>  
+				</div>
+			</section>
+
+			<footer>
+				<h3> © 2023 Kathryne V. All rights reserved. </h3>
+			</footer>
+
+	</body>
+</html>
